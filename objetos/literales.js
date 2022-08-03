@@ -17,6 +17,10 @@ const aprendiz = {
   formacion:{ programa: "Prg de software", ficha:2453232, },
 };
 console.log(aprendiz.documento)
+console.log(aprendiz['nombre'])
+console.log(aprendiz['competencias'][1])
+
+
 aprendiz.area='software';
 console.log(aprendiz.ficha)
 aprendiz.nombre='Maria Jose';
@@ -34,3 +38,13 @@ console.log('Objeto copiado',aprendiz2);
 aprendiz2.sede='Soacha';
 console.log('objeto original modif',aprendiz)
 console.log('Objeto copiado modif',aprendiz2);
+
+console.log('...............................')
+for (const key in aprendiz) {
+ console.log(`${aprendiz[key]}`) 
+}
+
+
+// for (const key in aprendiz) {
+//   console.log(`${key} ...${aprendiz[key]}`);
+// }
