@@ -67,3 +67,8 @@ const hola=()=>console.log('Hola Mundo');
 hola()
 const hola1=parametro=>console.log(`Hola ${parametro}`);
 hola1('SENA');
+// const sumar=(a,b)=>{
+//     return a+b
+// }
+const sumar=(a,b)=>a+b
+console.log(sumar(3,5))
