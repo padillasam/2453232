@@ -72,3 +72,4 @@ hola1('SENA');
 // }
 const sumar=(a,b)=>a+b
 console.log(sumar(3,5))
+console.log('nueva linea')
