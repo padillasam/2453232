@@ -1,4 +1,5 @@
 class Producto{
+    
     constructor(nombre, precio){
         this._nombre=nombre;
         this._precio=precio;
@@ -10,6 +11,14 @@ class Producto{
     set nombre(nombre){
         this._nombre=nombre;
     }
+
+    modificarNombre(nombre){
+        this._nombre=nombre;
+    }
+
+    datosCompletos(){
+        return `nombre= ${this._nombre} precio=${this._precio}`
+    }
 }
 
 
@@ -18,9 +27,9 @@ class Producto{
 let prod1=new Producto('computador',4000000);
 console.log(prod1.nombre);
 prod1.nombre="computador portatil";
+prod1.modificarNombre('tablet');
 console.log(prod1.nombre);
-
-
+console.log(prod1.datosCompletos());
 
 // let prod2=new Producto('Celular',3000000);
 // console.log(prod1);
