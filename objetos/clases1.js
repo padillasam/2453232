@@ -1,5 +1,4 @@
-class Producto{
-    
+class Producto{    
     constructor(nombre, precio){
         this._nombre=nombre;
         this._precio=precio;
@@ -7,15 +6,12 @@ class Producto{
     get nombre(){
         return this._nombre;
     }    
-
     set nombre(nombre){
         this._nombre=nombre;
     }
-
     modificarNombre(nombre){
         this._nombre=nombre;
     }
-
     datosCompletos(){
         return `nombre= ${this._nombre} precio=${this._precio}`
     }
