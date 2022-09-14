@@ -9,6 +9,14 @@ class Producto{
     set nombre(nombre){
         this._nombre=nombre;
     }
+
+     set precio(precio){
+       this._precio=precio; 
+     }
+
+     get precio(){
+        return this._precio;
+     }
     modificarNombre(nombre){
         this._nombre=nombre;
     }
@@ -24,7 +32,7 @@ let prod1=new Producto('computador',4000000);
 console.log(prod1.nombre);
 prod1.nombre="computador portatil";
 prod1.modificarNombre('tablet');
-console.log(prod1.nombre);
+console.log(prod1.precio);
 console.log(prod1.datosCompletos());
 
 // let prod2=new Producto('Celular',3000000);
